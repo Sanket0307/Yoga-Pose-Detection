@@ -43,6 +43,7 @@ _4. Web Application_
     -Uploading images
     -Displaying predictions dynamically
   -Integration: The trained model is seamlessly integrated with the Flask app for real-time inference.
+
 ##**Results**
 _Accuracy_:
   -Training Accuracy: ~96%
@@ -51,6 +52,7 @@ _Accuracy_:
 ***Acknowledgments***
   -Inspiration from fitness applications and computer vision advancements.
   -Special thanks to publicly available yoga pose datasets used for training.
+
 ##**Next Steps**
 _Model Improvements:
 Experiment with tra_nsfer learning using pre-trained models like ResNet or EfficientNet.
