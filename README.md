@@ -90,6 +90,8 @@ _Accuracy_:
   
   -Special thanks to publicly available yoga pose datasets used for training.
 
+  https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset/data?select=DATASET
+
 ## **Next Steps:**
 
 _Model Improvements:_
