@@ -44,23 +44,29 @@ _4. Web Application_
     -Displaying predictions dynamically
   -Integration: The trained model is seamlessly integrated with the Flask app for real-time inference.
 
-##**Results**
+**Results**
+
 _Accuracy_:
   -Training Accuracy: ~96%
   -Validation Accuracy: ~92%
   -Test Accuracy: ~90% on unseen data.
+
 ***Acknowledgments***
   -Inspiration from fitness applications and computer vision advancements.
   -Special thanks to publicly available yoga pose datasets used for training.
 
-##**Next Steps**
+**Next Steps**
+
 _Model Improvements:
 Experiment with tra_nsfer learning using pre-trained models like ResNet or EfficientNet.
 Increase the dataset size for better generalization.
+
 _Real-Time Detection:_
 Integrate with OpenCV or Mediapipe for real-time yoga pose detection via webcams.
+
 _Enhance Web UI:_
 Add interactive feedback for incorrect poses.
 Include tips for improving posture based on pose predictions.
+
 _Mobile Deployment:_
 Convert the model to TensorFlow Lite for use on mobile devices.
