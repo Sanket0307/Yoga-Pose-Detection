@@ -7,7 +7,7 @@ The Yoga Pose Detection project classifies images of yoga poses into predefined 
 
 The project follows a structured approach from data collection to deployment.
 
-_1. Data Collection_
+_**1. Data Collection_**
 
 Images of various yoga poses were gathered from publicly available datasets and curated manually.
 Classes included:
@@ -22,7 +22,7 @@ Classes included:
   
   -Plank Pose
 
-_2. Data Preprocessing_
+**_2. Data Preprocessing_**
 
 -Image Resizing: All images were resized to 224x224 pixels to match the input requirements of the CNN model.
 
@@ -36,7 +36,7 @@ _2. Data Preprocessing_
   
   -Zoom and brightness adjustments
 
-_3. Model Design_
+**_3. Model Design_**
 
 A Convolutional Neural Network (CNN) architecture was selected for its robustness in image classification tasks.
 Architecture Details
@@ -63,7 +63,7 @@ _Model Parameters_
  
   -Optimizer: Adam optimizer for efficient learning
 
-_4. Web Application_
+**_4. Web Application_**
   
   -Backend: Built using Flask to handle image uploads and predictions.
   
@@ -75,7 +75,7 @@ _4. Web Application_
  
   -Integration: The trained model is seamlessly integrated with the Flask app for real-time inference.
 
-**Results**
+_**Results**_
 
 _Accuracy_:
   -Training Accuracy: ~96%
