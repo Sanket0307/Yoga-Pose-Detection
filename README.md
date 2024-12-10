@@ -3,7 +3,7 @@
 
 The Yoga Pose Detection project classifies images of yoga poses into predefined categories using a deep learning-based approach. It utilizes computer vision techniques and a Convolutional Neural Network (CNN) to identify and categorize poses. An interactive web interface allows users to upload images and receive predictions in real-time.
 
-***Approach***
+## ***Approach***
 
 The project follows a structured approach from data collection to deployment.
 
@@ -75,7 +75,7 @@ _Model Parameters_
  
   -Integration: The trained model is seamlessly integrated with the Flask app for real-time inference.
 
-_**Results**_
+_**Results:**_
 
 _Accuracy_:
   -Training Accuracy: ~96%
@@ -84,13 +84,13 @@ _Accuracy_:
   
   -Test Accuracy: ~90% on unseen data.
 
-***Acknowledgments***
+***Acknowledgments:***
   
   -Inspiration from fitness applications and computer vision advancements.
   
   -Special thanks to publicly available yoga pose datasets used for training.
 
-**Next Steps**
+**Next Steps:**
 
 _Model Improvements:_
 Experiment with tra_nsfer learning using pre-trained models like ResNet or EfficientNet.
