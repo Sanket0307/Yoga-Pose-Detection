@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Pose Detection</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #1e1e2f, #141422);
+            color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            background: linear-gradient(145deg, #21212f, #29293f);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(255, 255, 255, 0.05);
+            width: 90%;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #ffba08;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Instructions */
+        .instructions {
+            font-size: 1.2em;
+            color: #d1d1d1;
+            margin-bottom: 20px;
+        }
+
+        /* File Upload Styling */
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            padding: 12px 30px;
+            background-color: #ffba08;
+            color: #1c1c1c;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        label:hover {
+            background-color: #ff9e00;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Submit Button Styling */
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #1e88e5;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            label, button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yoga Pose Detection</h1>
+        <p class="instructions">Upload your yoga pose image to get detailed predictions and feedback.</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Choose Image</label>
+            <input type="file" name="file" id="file" required>
+            <br>
+            <button type="submit">Upload & Predict</button>
+        </form>
+    </div>
+</body>
+</html>
