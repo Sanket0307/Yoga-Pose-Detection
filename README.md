@@ -7,7 +7,7 @@ The Yoga Pose Detection project classifies images of yoga poses into predefined 
 
 The project follows a structured approach from data collection to deployment.
 
-_**1. Data Collection_**
+***1.Data Colllection***
 
 Images of various yoga poses were gathered from publicly available datasets and curated manually.
 Classes included:
@@ -85,9 +85,10 @@ _Accuracy_:
   -Test Accuracy: ~90% on unseen data.
 
 ***Acknowledgments***
+  
   -Inspiration from fitness applications and computer vision advancements.
-  -
-  Special thanks to publicly available yoga pose datasets used for training.
+  
+  -Special thanks to publicly available yoga pose datasets used for training.
 
 **Next Steps**
 
