@@ -1,109 +1,96 @@
-# Yoga-Pose-Detection
-## Project Overview
+# 🧘‍♂️ Yoga Pose Detection
 
-The Yoga Pose Detection project classifies images of yoga poses into predefined categories using a deep learning-based approach. It utilizes computer vision techniques and a Convolutional Neural Network (CNN) to identify and categorize poses. An interactive web interface allows users to upload images and receive predictions in real-time.
+An AI-powered web app that classifies images of yoga poses using computer vision and deep learning. The model is built using a Convolutional Neural Network (CNN) and integrated into a Flask-based web application for real-time predictions.
 
-## ***Approach***
+---
 
-The project follows a structured approach from data collection to deployment.
+## 🌟 Project Overview
 
-***1.Data Colllection***
+This project aims to detect and classify popular yoga poses from user-uploaded images. Using a CNN model and an interactive web interface, users can receive instant feedback on their yoga pose classification.
 
-Images of various yoga poses were gathered from publicly available datasets and curated manually.
-Classes included:
-  
-  -Warrior II
-  
-  -Tree Pose
-  
-  -Downward Dog
-  
-  -Goddess Pose
-  
-  -Plank Pose
+---
 
-**_2. Data Preprocessing_**
+## 🚀 Approach
 
--Image Resizing: All images were resized to 224x224 pixels to match the input requirements of the CNN model.
+### 1. 📸 Data Collection
 
--Normalization: Pixel values were scaled to the range [0, 1] to improve model performance.
+Images of yoga poses were collected from publicly available datasets and manually curated. The following classes were included:
 
--Data Augmentation: Applied techniques to increase data diversity and reduce overfitting:
-  
-  -Random rotations
-  
-  -Flipping (horizontal and vertical)
-  
-  -Zoom and brightness adjustments
+- Warrior II  
+- Tree Pose  
+- Downward Dog  
+- Goddess Pose  
+- Plank Pose  
 
-**_3. Model Design_**
+### 2. 🧹 Data Preprocessing
 
-A Convolutional Neural Network (CNN) architecture was selected for its robustness in image classification tasks.
-Architecture Details
-  
-  -Input Layer: Accepts images of shape 224x224x3.
-  
-  -Convolutional Layers: Extract features using multiple filters.
-  
-  -Batch Normalization: Normalizes intermediate inputs to stabilize learning.
-  
-  -Pooling Layers: Reduces spatial dimensions for computational efficiency.
-  
-  -Fully Connected Layers: Dense layers process extracted features for classification.
-  
-  -Output Layer:
-    
-    -Contains five neurons (one for each pose).
-   
-    -Uses the softmax activation function for multi-class classification.
+- **Image Resizing:** All images resized to `224x224` pixels.  
+- **Normalization:** Pixel values scaled to [0, 1].  
+- **Data Augmentation:**  
+  - Random rotations  
+  - Horizontal and vertical flipping  
+  - Zoom and brightness adjustments  
 
-_Model Parameters_
-  
-  -Loss Function: Categorical Crossentropy
- 
-  -Optimizer: Adam optimizer for efficient learning
+### 3. 🧠 Model Design
 
-**_4. Web Application_**
-  
-  -Backend: Built using Flask to handle image uploads and predictions.
-  
-  -Frontend: Features an interactive and visually appealing interface for:
-    
-    -Uploading images
-    
-    -Displaying predictions dynamically
- 
-  -Integration: The trained model is seamlessly integrated with the Flask app for real-time inference.
+A CNN model was used for robust image classification.
 
-## _**Results:**_
+- **Input Layer:** 224x224x3 image shape  
+- **Convolutional Layers:** Feature extraction  
+- **Batch Normalization:** Stabilizes learning  
+- **Pooling Layers:** Reduces dimensionality  
+- **Dense Layers:** Fully connected layers for classification  
+- **Output Layer:**  
+  - 5 neurons (one per pose)  
+  - Softmax activation  
 
-_Accuracy_:
-  -Training Accuracy: ~96%
-  
-  -Validation Accuracy: ~92%
-  
-  -Test Accuracy: ~90% on unseen data.
+**Model Config:**  
+- **Loss Function:** Categorical Crossentropy  
+- **Optimizer:** Adam  
 
-## ***Acknowledgments:***
-  
-  -Inspiration from fitness applications and computer vision advancements.
-  
-  -Special thanks to publicly available yoga pose datasets used for training.
+### 4. 🌐 Web Application
 
-  https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset/data?select=DATASET
+- **Backend:** Flask (handles image upload and inference)  
+- **Frontend:** Interactive UI to:
+  - Upload yoga pose images  
+  - Display predictions in real time  
 
-## **Next Steps:**
+- **Integration:** The trained model is integrated for seamless live inference.
 
-_Model Improvements:_
-Experiment with tra_nsfer learning using pre-trained models like ResNet or EfficientNet.
-Increase the dataset size for better generalization.
+---
 
-_Real-Time Detection:_
-Integrate with OpenCV or Mediapipe for real-time yoga pose detection via webcams.
+## 📊 Results
 
-_Enhance Web UI:_
-Add interactive feedback for incorrect poses.
-Include tips for improving posture based on pose predictions.
+- **Training Accuracy:** ~96%  
+- **Validation Accuracy:** ~92%  
+- **Test Accuracy:** ~90% on unseen data  
 
-_Mobile Deployment:_
-Convert the model to TensorFlow Lite for use on mobile devices.
+---
+
+## 🙏 Acknowledgments
+
+- Inspired by fitness tech and computer vision use cases  
+- Dataset used: [Yoga Poses Dataset (Kaggle)](https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset/data?select=DATASET)
+
+---
+
+## 🔮 Next Steps
+
+### 🔧 Model Improvements
+- Experiment with **transfer learning** using models like ResNet or EfficientNet  
+- Increase dataset size for better generalization  
+
+### 📸 Real-Time Detection
+- Integrate **OpenCV** or **MediaPipe** for webcam-based real-time detection  
+
+### 💻 UI Enhancements
+- Add feedback on incorrect poses  
+- Provide tips for improving posture  
+
+### 📱 Mobile Deployment
+- Convert model to **TensorFlow Lite** for mobile app integration  
+
+---
+
+## 📁 Project Structure (optional)
+
